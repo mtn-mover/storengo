@@ -1,0 +1,107 @@
+# Rewrite Engine nur einmal aktivieren
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # HTTPS Redirect zuerst
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # SEO Domain-Weiterleitungen zu storengo.ch (301 Permanent Redirects)
+    # luggage-storage.ch -> storengo.ch
+    RewriteCond %{HTTP_HOST} ^(www\.)?luggage-storage\.ch$ [NC]
+    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
+    
+    # interlaken-luggage.ch -> storengo.ch
+    RewriteCond %{HTTP_HOST} ^(www\.)?interlaken-luggage\.ch$ [NC]
+    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
+    
+    # luggage-storage-interlaken.ch -> storengo.ch
+    RewriteCond %{HTTP_HOST} ^(www\.)?luggage-storage-interlaken\.ch$ [NC]
+    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
+    
+    # Spezifische www zu non-www Weiterleitung für storengo.ch
+    RewriteCond %{HTTP_HOST} ^www\.storengo\.ch$ [NC]
+    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
+    
+    # Clean URLs - Remove .html extension
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^luggage-storage-interlaken$ luggage-storage-interlaken.html [L]
+    
+    # Redirect .html to clean URL
+    RewriteCond %{THE_REQUEST} /luggage-storage-interlaken\.html [NC]
+    RewriteRule ^luggage-storage-interlaken\.html$ /luggage-storage-interlaken [R=301,L]
+    
+    # Optional: Trailing Slash Handling (SEO best practice)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !(.*)/$
+    RewriteRule ^(.*)$ https://storengo.ch/$1/ [R=301,L]
+</IfModule>
+
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Browser caching (erweitert für bessere Performance)
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/ico "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# Security headers (erweitert)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # Cache-Control für bessere SEO
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000"
+    </FilesMatch>
+    
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+</IfModule>
+
+# Preload wichtige Ressourcen für bessere Performance
+<IfModule mod_headers.c>
+    # Preload kritische CSS/JS (anpassen an Ihre Dateien)
+    Header add Link "</style.css>; rel=preload; as=style" "expr=%{REQUEST_URI} == '/'"
+    Header add Link "</script.js>; rel=preload; as=script" "expr=%{REQUEST_URI} == '/'"
+</IfModule>
+
+# Zusätzliche SEO-Optimierungen
+<IfModule mod_rewrite.c>
+    # Robots.txt handling
+    RewriteRule ^robots\.txt$ robots.txt [L]
+    
+    # Sitemap handling
+    RewriteRule ^sitemap\.xml$ sitemap.xml [L]
+</IfModule>

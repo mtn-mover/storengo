@@ -1132,6 +1132,11 @@
             
             .hero {
                 padding: 3rem 1rem;
+                margin-top: 60px; /* Extra space for banner on mobile */
+            }
+            
+            .banner-spacer {
+                height: 180px !important; /* More space on mobile */
             }
             
             .hero h1 {
@@ -1299,7 +1304,7 @@
     </div>
     
     <!-- Add padding to body to account for fixed banner -->
-    <div style="height: 120px;"></div>
+    <div style="height: 120px;" class="banner-spacer"></div>
     
     <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">

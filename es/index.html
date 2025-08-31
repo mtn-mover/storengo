@@ -1288,6 +1288,19 @@
     </style>
 </head>
 <body>
+    <!-- Season Closed Alert Banner -->
+    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; padding: 20px; text-align: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="margin: 0 0 10px 0; font-size: 1.8rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🎿 CERRADO POR TEMPORADA 🎿</h2>
+            <p style="margin: 0; font-size: 1.2rem; font-weight: 500;">Estamos actualmente cerrados por la temporada de invierno</p>
+            <p style="margin: 10px 0 0 0; font-size: 1.4rem; font-weight: 600; background: rgba(255,255,255,0.2); display: inline-block; padding: 8px 20px; border-radius: 30px;">✨ Reapertura Primavera 2026 ✨</p>
+            <p style="margin: 10px 0 0 0; font-size: 0.95rem; opacity: 0.95;">Gracias por su comprensión. ¡Vuelvan el próximo año para nuestros servicios de consigna de equipajes!</p>
+        </div>
+    </div>
+    
+    <!-- Add padding to body to account for fixed banner -->
+    <div style="height: 140px;"></div>
+    
     <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-banner-content">
@@ -1312,7 +1325,7 @@
                 <li><a href="#pricing">Precios</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="luggage-storage-interlaken.html">Info del Servicio</a></li>
-                <li><a href="https://wa.me/41798016570" class="nav-cta">WhatsApp</a></li>
+                <li><a href="#" class="nav-cta" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Lo sentimos, estamos cerrados por temporada. ¡Reapertura Primavera 2026!'); return false;">WhatsApp (CERRADO)</a></li>
                 <li class="language-switcher">
                     <a href="#" class="lang-toggle">🌐 ES ▼</a>
                     <div class="lang-dropdown">
@@ -1339,8 +1352,8 @@
                 Precios simples. Sin reserva necesaria. <strong>Servicio familiar de guardaequipajes</strong>.
             </p>
             <div class="hero-buttons">
-                <a href="https://wa.me/41798016570" class="btn btn-primary">
-                    Mensaje por WhatsApp
+                <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Lo sentimos, estamos cerrados por temporada. ¡Reapertura Primavera 2026!'); return false;">
+                    Mensaje por WhatsApp (CERRADO)
                 </a>
                 <a href="#location" class="btn btn-secondary">
                     Encuéntranos
@@ -1441,7 +1454,7 @@
                     </div>
                     <div class="location-text">
                         <h4>Contacto</h4>
-                        <p>WhatsApp: <a href="https://wa.me/41798016570" style="color: var(--dark);">+41 79 801 65 70</a></p>
+                        <p>WhatsApp: <span style="color: var(--dark); opacity: 0.5; text-decoration: line-through;">+41 79 801 65 70 (CERRADO POR TEMPORADA)</span></p>
                     </div>
                 </div>
             </div>
@@ -1516,8 +1529,8 @@
             </ul>
             
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="https://wa.me/41798016570" class="btn btn-primary" style="flex: 1; min-width: 200px;">
-                    Comenzar - Contáctanos en WhatsApp
+                <a href="#" class="btn btn-primary" style="flex: 1; min-width: 200px; opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Lo sentimos, estamos cerrados por temporada. ¡Reapertura Primavera 2026!'); return false;">
+                    Comenzar - Contáctanos en WhatsApp (CERRADO)
                 </a>
                 <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary" style="flex: 1; min-width: 200px;">
                     Encuéntranos - Ubicación en Google Maps
@@ -1594,8 +1607,8 @@
         <h2>¿Listo para explorar?</h2>
         <p>Deja tus bolsas y descubre Interlaken con las manos libres</p>
         <div class="hero-buttons">
-            <a href="https://wa.me/41798016570" class="btn btn-primary">
-                Comenzar con WhatsApp
+            <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Lo sentimos, estamos cerrados por temporada. ¡Reapertura Primavera 2026!'); return false;">
+                Comenzar con WhatsApp (CERRADO)
             </a>
             <a href="tel:+41798016570" class="btn btn-secondary" style="background: var(--gray-dark);">
                 Llámanos
@@ -1640,7 +1653,7 @@
                 <ul>
                     <li>Untere Bönigstrasse 20c</li>
                     <li>3800 Interlaken</li>
-                    <li><a href="https://wa.me/41798016570">WhatsApp</a></li>
+                    <li><span style="opacity: 0.5; text-decoration: line-through;">WhatsApp (CERRADO)</span></li>
                     <li>Diario: 11:00 AM - 6:00 PM</li>
                     <li>Entrega temprana y recogida tardía con cita previa</li>
                 </ul>

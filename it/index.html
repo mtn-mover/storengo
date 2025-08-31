@@ -1283,6 +1283,19 @@
     </style>
 </head>
 <body>
+    <!-- Season Closed Alert Banner -->
+    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; padding: 20px; text-align: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="margin: 0 0 10px 0; font-size: 1.8rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🎿 CHIUSO PER LA STAGIONE 🎿</h2>
+            <p style="margin: 0; font-size: 1.2rem; font-weight: 500;">Siamo attualmente chiusi per la stagione invernale</p>
+            <p style="margin: 10px 0 0 0; font-size: 1.4rem; font-weight: 600; background: rgba(255,255,255,0.2); display: inline-block; padding: 8px 20px; border-radius: 30px;">✨ Riapertura Primavera 2026 ✨</p>
+            <p style="margin: 10px 0 0 0; font-size: 0.95rem; opacity: 0.95;">Grazie per la comprensione. Tornate l'anno prossimo per i nostri servizi di deposito bagagli!</p>
+        </div>
+    </div>
+    
+    <!-- Add padding to body to account for fixed banner -->
+    <div style="height: 140px;"></div>
+    
     <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-banner-content">
@@ -1307,7 +1320,7 @@
                 <li><a href="#pricing">Prezzi</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="luggage-storage-interlaken.html">Service Info</a></li>
-                <li><a href="https://wa.me/41798016570" class="nav-cta">WhatsApp</a></li>
+                <li><a href="#" class="nav-cta" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Scusate, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">WhatsApp (CHIUSO)</a></li>
                 <li class="language-switcher">
                     <a href="#" class="lang-toggle">🌐 IT ▼</a>
                     <div class="lang-dropdown">
@@ -1334,8 +1347,8 @@
                 Prezzi semplici. Nessuna prenotazione necessaria. <strong>Servizio deposito bagagli</strong> a conduzione familiare.
             </p>
             <div class="hero-buttons">
-                <a href="https://wa.me/41798016570" class="btn btn-primary">
-                    Messaggio su WhatsApp
+                <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Scusate, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">
+                    Messaggio su WhatsApp (CHIUSO)
                 </a>
                 <a href="#location" class="btn btn-secondary">
                     Trovaci
@@ -1436,7 +1449,7 @@
                     </div>
                     <div class="location-text">
                         <h4>Contact</h4>
-                        <p>WhatsApp: <a href="https://wa.me/41798016570" style="color: var(--dark);">+41 79 801 65 70</a></p>
+                        <p>WhatsApp: <span style="color: var(--dark); opacity: 0.5; text-decoration: line-through;">+41 79 801 65 70 (CHIUSO PER STAGIONE)</span></p>
                     </div>
                 </div>
             </div>
@@ -1511,8 +1524,8 @@
             </ul>
             
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="https://wa.me/41798016570" class="btn btn-primary" style="flex: 1; min-width: 200px;">
-                    Inizia - Contattaci su WhatsApp
+                <a href="#" class="btn btn-primary" style="flex: 1; min-width: 200px; opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Scusate, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">
+                    Inizia - Contattaci su WhatsApp (CHIUSO)
                 </a>
                 <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary" style="flex: 1; min-width: 200px;">
                     Trovaci - Posizione su Google Maps
@@ -1589,8 +1602,8 @@
         <h2>Pronti per esplorare?</h2>
         <p>Depositate le vostre borse e scoprite Interlaken a mani libere</p>
         <div class="hero-buttons">
-            <a href="https://wa.me/41798016570" class="btn btn-primary">
-                Inizia con WhatsApp
+            <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Scusate, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">
+                Inizia con WhatsApp (CHIUSO)
             </a>
             <a href="tel:+41798016570" class="btn btn-secondary" style="background: var(--gray-dark);">
                 Chiamaci
@@ -1635,7 +1648,7 @@
                 <ul>
                     <li>Untere Bönigstrasse 20c</li>
                     <li>3800 Interlaken</li>
-                    <li><a href="https://wa.me/41798016570">WhatsApp</a></li>
+                    <li><span style="opacity: 0.5; text-decoration: line-through;">WhatsApp (CHIUSO)</span></li>
                     <li>Daily: 11:00 AM - 6:00 PM</li>
                     <li>Early drop-off & late pickup by arrangement</li>
                 </ul>

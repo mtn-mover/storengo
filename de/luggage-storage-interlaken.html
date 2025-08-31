@@ -595,6 +595,11 @@
             
             .hero {
                 padding: 3rem 1rem;
+                margin-top: 100px; /* Extra space for banner on mobile */
+            }
+            
+            .banner-spacer {
+                height: 220px !important; /* More space on mobile */
             }
             
             .hero h1 {
@@ -646,6 +651,17 @@
     </style>
 </head>
 <body>
+    <!-- Season Closed Alert Banner -->
+    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; padding: 15px; text-align: center; position: fixed; top: 65px; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; width: 100%; left: 0;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🎿 GESCHLOSSEN FÜR DIE SAISON 🎿</h2>
+            <p style="margin: 0; font-size: 1.1rem; font-weight: 500;">Wir sind derzeit für die Saison geschlossen</p>
+            <p style="margin: 8px 0 0 0; font-size: 1.2rem; font-weight: 600; background: rgba(255,255,255,0.2); display: inline-block; padding: 8px 20px; border-radius: 30px;">✨ Wiedereröffnung Frühling 2026 ✨</p>
+            <p style="margin: 8px 0 0 0; font-size: 0.95rem; opacity: 0.95;">Vielen Dank für Ihr Verständnis. Bitte schauen Sie nächstes Jahr wieder für unsere Gepäckaufbewahrungsservices vorbei!</p>
+        </div>
+    </div>
+    <div style="height: 120px;" class="banner-spacer"></div>
+    
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -656,7 +672,7 @@
                 <li><a href="/de/#pricing">Preise</a></li>
                 <li><a href="/de/#faq">FAQ</a></li>
                 <li><a href="/de/luggage-storage-interlaken.html">Service Info</a></li>
-                <li><a href="https://wa.me/41798016570" class="nav-cta">WhatsApp</a></li>
+                <li><a href="#" class="nav-cta" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Entschuldigung, wir sind für die Saison geschlossen. Wiedereröffnung Frühling 2026!'); return false;">WhatsApp (GESCHLOSSEN)</a></li>
                 <li class="language-switcher">
                     <a href="#" class="lang-toggle">🌐 DE ▼</a>
                     <div class="lang-dropdown">
@@ -683,10 +699,10 @@
                 Sicher, bequem und nur 2 Minuten vom Bahnhof Interlaken Ost entfernt.
             </p>
             <div class="hero-buttons">
-                <a href="https://wa.me/41798016570" class="btn btn-primary">
-                    Kontakt über WhatsApp
+                <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Entschuldigung, wir sind für die Saison geschlossen. Wiedereröffnung Frühling 2026!'); return false;">
+                    Kontakt über WhatsApp (GESCHLOSSEN)
                 </a>
-                <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary">
+                <a href="#" class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;" onclick="alert('Entschuldigung, wir sind für die Saison geschlossen. Wiedereröffnung Frühling 2026!'); window.open('https://maps.app.goo.gl/u3aZMyUW5fThFyPS7', '_blank'); return false;">
                     Uns auf Google Maps finden
                 </a>
             </div>
@@ -730,7 +746,7 @@
             <ul>
                 <li>Sicherer Aufbewahrungsbereich mit kontrolliertem Zugang</li>
                 <li>Nummeriertes Belegsystem zur einfachen Identifizierung</li>
-                <li>Flexible Aufbewahrungszeiten (stündlich, täglich oder länger)</li>
+                <li><span style="opacity: 0.5; text-decoration: line-through;">Flexible Aufbewahrungszeiten (stündlich, täglich oder länger)</span> <strong>(DERZEIT GESCHLOSSEN FÜR DIE SAISON)</strong></li>
                 <li>Keine Grössenbeschränkungen - wir bewahren alles auf, von kleinen Tagesrucksäcken bis zu grossen Koffern</li>
                 <li>Kostenlose Aufbewahrung kleiner Taschen in Kombination mit grösserem Gepäck</li>
                 <li>Bar- und Kartenzahlungsmöglichkeiten</li>
@@ -748,7 +764,7 @@
             </ul>
             
             <h3>Flexible Öffnungszeiten und Vereinbarungen</h3>
-            <p>Wir haben täglich von 11:00 bis 18:00 Uhr geöffnet und decken die Spitzenzeiten ab, in denen die meisten Reisenden eine Gepäckaufbewahrung benötigen. Für diejenigen mit frühen Morgen- oder späten Abendsreisen bieten wir spezielle Abhol- und Abgabezeiten über WhatsApp-Koordination unter +41 79 801 65 70 an.</p>
+            <p><span style="opacity: 0.5; text-decoration: line-through;">Wir haben täglich von 11:00 bis 18:00 Uhr geöffnet und decken die Spitzenzeiten ab, in denen die meisten Reisenden eine Gepäckaufbewahrung benötigen. Für diejenigen mit frühen Morgen- oder späten Abendsreisen bieten wir spezielle Abhol- und Abgabezeiten über WhatsApp-Koordination unter +41 79 801 65 70 an.</span><br><strong>DERZEIT GESCHLOSSEN FÜR DIE SAISON - Wiedereröffnung Frühling 2026!</strong></p>
         </div>
     </section>
 
@@ -803,10 +819,10 @@
         <h2>Bereit, Interlaken zu erkunden?</h2>
         <p>Bewahren Sie Ihr Gepäck sicher auf und entdecken Sie die Schweizer Alpen mit freien Händen</p>
         <div class="hero-buttons">
-            <a href="https://wa.me/41798016570" class="btn btn-primary">
-                Kontakt über WhatsApp
+            <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Entschuldigung, wir sind für die Saison geschlossen. Wiedereröffnung Frühling 2026!'); return false;">
+                Kontakt über WhatsApp (GESCHLOSSEN)
             </a>
-            <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary">
+            <a href="#" class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;" onclick="alert('Entschuldigung, wir sind für die Saison geschlossen. Wiedereröffnung Frühling 2026!'); window.open('https://maps.app.goo.gl/u3aZMyUW5fThFyPS7', '_blank'); return false;">
                 Wegbeschreibung erhalten
             </a>
         </div>
@@ -832,7 +848,7 @@
                 <a href="/de/#location">Standort</a>
                 <a href="/de/#pricing">Preise</a>
                 <a href="/de/#faq">FAQ</a>
-                <a href="https://wa.me/41798016570">Kontakt</a>
+                <a href="#" style="opacity: 0.5; text-decoration: line-through;" onclick="alert('Entschuldigung, wir sind für die Saison geschlossen. Wiedereröffnung Frühling 2026!'); return false;">Kontakt (GESCHLOSSEN)</a>
             </div>
             <div class="footer-bottom">
                 <p>© aversis GmbH 2025</p>

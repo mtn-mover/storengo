@@ -595,6 +595,11 @@
             
             .hero {
                 padding: 3rem 1rem;
+                margin-top: 100px; /* Extra space for banner on mobile */
+            }
+            
+            .banner-spacer {
+                height: 220px !important; /* More space on mobile */
             }
             
             .hero h1 {
@@ -646,6 +651,17 @@
     </style>
 </head>
 <body>
+    <!-- Season Closed Alert Banner -->
+    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; padding: 15px; text-align: center; position: fixed; top: 65px; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; width: 100%; left: 0;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🎿 FERMÉ POUR LA SAISON 🎿</h2>
+            <p style="margin: 0; font-size: 1.1rem; font-weight: 500;">Nous sommes actuellement fermés pour la saison</p>
+            <p style="margin: 8px 0 0 0; font-size: 1.2rem; font-weight: 600; background: rgba(255,255,255,0.2); display: inline-block; padding: 8px 20px; border-radius: 30px;">✨ Réouverture Printemps 2026 ✨</p>
+            <p style="margin: 8px 0 0 0; font-size: 0.95rem; opacity: 0.95;">Merci de votre compréhension. Veuillez revenir l'année prochaine pour nos services de consigne bagages!</p>
+        </div>
+    </div>
+    <div style="height: 120px;" class="banner-spacer"></div>
+    
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -656,7 +672,7 @@
                 <li><a href="/fr/#pricing">Tarifs</a></li>
                 <li><a href="/fr/#faq">FAQ</a></li>
                 <li><a href="/fr/luggage-storage-interlaken.html">Info Service</a></li>
-                <li><a href="https://wa.me/41798016570" class="nav-cta">WhatsApp</a></li>
+                <li><a href="#" class="nav-cta" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Désolé, nous sommes fermés pour la saison. Réouverture Printemps 2026!'); return false;">WhatsApp (FERMÉ)</a></li>
                 <li class="language-switcher">
                     <a href="#" class="lang-toggle">🌐 FR ▼</a>
                     <div class="lang-dropdown">
@@ -683,10 +699,10 @@
                 Sécurisé, pratique et à seulement 2 minutes de la gare Interlaken Ost.
             </p>
             <div class="hero-buttons">
-                <a href="https://wa.me/41798016570" class="btn btn-primary">
-                    Contactez-nous via WhatsApp
+                <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Désolé, nous sommes fermés pour la saison. Réouverture Printemps 2026!'); return false;">
+                    Contactez-nous via WhatsApp (FERMÉ)
                 </a>
-                <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary">
+                <a href="#" class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;" onclick="alert('Désolé, nous sommes fermés pour la saison. Réouverture Printemps 2026!'); window.open('https://maps.app.goo.gl/u3aZMyUW5fThFyPS7', '_blank'); return false;">
                     Nous trouver sur Google Maps
                 </a>
             </div>
@@ -730,7 +746,7 @@
             <ul>
                 <li>Zone de stockage sécurisée avec accès contrôlé</li>
                 <li>Système de reçus numérotés pour une identification facile</li>
-                <li>Périodes de stockage flexibles (horaire, quotidien ou plus long)</li>
+                <li><span style="opacity: 0.5; text-decoration: line-through;">Périodes de stockage flexibles (horaire, quotidien ou plus long)</span> <strong>(ACTUELLEMENT FERMÉ POUR LA SAISON)</strong></li>
                 <li>Aucune restriction de taille - nous stockons tout, des petits sacs de jour aux grandes valises</li>
                 <li>Stockage gratuit de petit sac combiné avec bagages plus volumineux</li>
                 <li>Options de paiement en espèces et par carte</li>
@@ -748,7 +764,7 @@
             </ul>
             
             <h3>Horaires flexibles et arrangements</h3>
-            <p>Nous sommes ouverts tous les jours de 11h00 à 18h00, couvrant les heures de pointe où la plupart des voyageurs ont besoin d'une consigne bagages. Pour ceux qui ont des arrangements de voyage tôt le matin ou tard le soir, nous offrons des heures spéciales de dépôt et de récupération via coordination WhatsApp au +41 79 801 65 70.</p>
+            <p><span style="opacity: 0.5; text-decoration: line-through;">Nous sommes ouverts tous les jours de 11h00 à 18h00, couvrant les heures de pointe où la plupart des voyageurs ont besoin d'une consigne bagages. Pour ceux qui ont des arrangements de voyage tôt le matin ou tard le soir, nous offrons des heures spéciales de dépôt et de récupération via coordination WhatsApp au +41 79 801 65 70.</span><br><strong>ACTUELLEMENT FERMÉ POUR LA SAISON - Réouverture Printemps 2026!</strong></p>
         </div>
     </section>
 
@@ -803,10 +819,10 @@
         <h2>Prêt à explorer Interlaken ?</h2>
         <p>Stockez vos bagages en sécurité et découvrez les Alpes suisses les mains libres</p>
         <div class="hero-buttons">
-            <a href="https://wa.me/41798016570" class="btn btn-primary">
-                Contactez-nous sur WhatsApp
+            <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Désolé, nous sommes fermés pour la saison. Réouverture Printemps 2026!'); return false;">
+                Contactez-nous sur WhatsApp (FERMÉ)
             </a>
-            <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary">
+            <a href="#" class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;" onclick="alert('Désolé, nous sommes fermés pour la saison. Réouverture Printemps 2026!'); window.open('https://maps.app.goo.gl/u3aZMyUW5fThFyPS7', '_blank'); return false;">
                 Obtenir directions
             </a>
         </div>
@@ -832,7 +848,7 @@
                 <a href="/fr/#location">Emplacement</a>
                 <a href="/fr/#pricing">Tarifs</a>
                 <a href="/fr/#faq">FAQ</a>
-                <a href="https://wa.me/41798016570">Contact</a>
+                <a href="#" style="opacity: 0.5; text-decoration: line-through;" onclick="alert('Désolé, nous sommes fermés pour la saison. Réouverture Printemps 2026!'); return false;">Contact (FERMÉ)</a>
             </div>
             <div class="footer-bottom">
                 <p>© aversis GmbH 2025</p>

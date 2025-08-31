@@ -595,6 +595,11 @@
             
             .hero {
                 padding: 3rem 1rem;
+                margin-top: 100px; /* Extra space for banner on mobile */
+            }
+            
+            .banner-spacer {
+                height: 220px !important; /* More space on mobile */
             }
             
             .hero h1 {
@@ -646,6 +651,17 @@
     </style>
 </head>
 <body>
+    <!-- Season Closed Alert Banner -->
+    <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); color: white; padding: 15px; text-align: center; position: fixed; top: 65px; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; width: 100%; left: 0;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="margin: 0 0 8px 0; font-size: 1.6rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">🎿 CHIUSO PER LA STAGIONE 🎿</h2>
+            <p style="margin: 0; font-size: 1.1rem; font-weight: 500;">Siamo attualmente chiusi per la stagione</p>
+            <p style="margin: 8px 0 0 0; font-size: 1.2rem; font-weight: 600; background: rgba(255,255,255,0.2); display: inline-block; padding: 8px 20px; border-radius: 30px;">✨ Riapertura Primavera 2026 ✨</p>
+            <p style="margin: 8px 0 0 0; font-size: 0.95rem; opacity: 0.95;">Grazie per la comprensione. Si prega di tornare il prossimo anno per i nostri servizi di deposito bagagli!</p>
+        </div>
+    </div>
+    <div style="height: 120px;" class="banner-spacer"></div>
+    
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -656,7 +672,7 @@
                 <li><a href="/it/#pricing">Prezzi</a></li>
                 <li><a href="/it/#faq">FAQ</a></li>
                 <li><a href="/it/luggage-storage-interlaken.html">Info Servizio</a></li>
-                <li><a href="https://wa.me/41798016570" class="nav-cta">WhatsApp</a></li>
+                <li><a href="#" class="nav-cta" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Spiacenti, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">WhatsApp (CHIUSO)</a></li>
                 <li class="language-switcher">
                     <a href="#" class="lang-toggle">🌐 IT ▼</a>
                     <div class="lang-dropdown">
@@ -683,10 +699,10 @@
                 Sicuro, conveniente e a soli 2 minuti dalla stazione Interlaken Ost.
             </p>
             <div class="hero-buttons">
-                <a href="https://wa.me/41798016570" class="btn btn-primary">
-                    Contattaci via WhatsApp
+                <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Spiacenti, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">
+                    Contattaci via WhatsApp (CHIUSO)
                 </a>
-                <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary">
+                <a href="#" class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;" onclick="alert('Spiacenti, siamo chiusi per la stagione. Riapertura Primavera 2026!'); window.open('https://maps.app.goo.gl/u3aZMyUW5fThFyPS7', '_blank'); return false;">
                     Trovaci su Google Maps
                 </a>
             </div>
@@ -730,7 +746,7 @@
             <ul>
                 <li>Area di deposito sicura con accesso controllato</li>
                 <li>Sistema di ricevute numerate per facile identificazione</li>
-                <li>Periodi di deposito flessibili (orario, giornaliero o più lungo)</li>
+                <li><span style="opacity: 0.5; text-decoration: line-through;">Periodi di deposito flessibili (orario, giornaliero o più lungo)</span> <strong>(ATTUALMENTE CHIUSO PER LA STAGIONE)</strong></li>
                 <li>Nessuna restrizione di dimensione - depositiamo tutto, dai piccoli zaini da giorno alle grandi valigie</li>
                 <li>Deposito gratuito di borsa piccola combinato con bagagli più grandi</li>
                 <li>Opzioni di pagamento in contanti e con carta</li>
@@ -748,7 +764,7 @@
             </ul>
             
             <h3>Orari flessibili e accordi</h3>
-            <p>Siamo aperti tutti i giorni dalle 11:00 alle 18:00, coprendo gli orari di punta quando la maggior parte dei viaggiatori ha bisogno del deposito bagagli. Per coloro con accordi di viaggio nelle prime ore del mattino o nella tarda serata, offriamo orari speciali di deposito e ritiro tramite coordinamento WhatsApp al +41 79 801 65 70.</p>
+            <p><span style="opacity: 0.5; text-decoration: line-through;">Siamo aperti tutti i giorni dalle 11:00 alle 18:00, coprendo gli orari di punta quando la maggior parte dei viaggiatori ha bisogno del deposito bagagli. Per coloro con accordi di viaggio nelle prime ore del mattino o nella tarda serata, offriamo orari speciali di deposito e ritiro tramite coordinamento WhatsApp al +41 79 801 65 70.</span><br><strong>ATTUALMENTE CHIUSO PER LA STAGIONE - Riapertura Primavera 2026!</strong></p>
         </div>
     </section>
 
@@ -803,10 +819,10 @@
         <h2>Pronto a esplorare Interlaken?</h2>
         <p>Deposita i tuoi bagagli in sicurezza e scopri le Alpi svizzere a mani libere</p>
         <div class="hero-buttons">
-            <a href="https://wa.me/41798016570" class="btn btn-primary">
-                Contattaci su WhatsApp
+            <a href="#" class="btn btn-primary" style="opacity: 0.5; cursor: not-allowed; text-decoration: line-through;" onclick="alert('Spiacenti, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">
+                Contattaci su WhatsApp (CHIUSO)
             </a>
-            <a href="https://maps.app.goo.gl/u3aZMyUW5fThFyPS7" target="_blank" class="btn btn-secondary">
+            <a href="#" class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;" onclick="alert('Spiacenti, siamo chiusi per la stagione. Riapertura Primavera 2026!'); window.open('https://maps.app.goo.gl/u3aZMyUW5fThFyPS7', '_blank'); return false;">
                 Ottieni indicazioni
             </a>
         </div>
@@ -832,7 +848,7 @@
                 <a href="/it/#location">Posizione</a>
                 <a href="/it/#pricing">Prezzi</a>
                 <a href="/it/#faq">FAQ</a>
-                <a href="https://wa.me/41798016570">Contatto</a>
+                <a href="#" style="opacity: 0.5; text-decoration: line-through;" onclick="alert('Spiacenti, siamo chiusi per la stagione. Riapertura Primavera 2026!'); return false;">Contatto (CHIUSO)</a>
             </div>
             <div class="footer-bottom">
                 <p>© aversis GmbH 2025</p>

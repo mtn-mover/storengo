@@ -1,58 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home pages (5 languages) -->
   <url>
-    <loc>https://storengo.ch/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/" />
   </url>
   <url>
-    <loc>https://storengo.ch/luggage-storage-interlaken</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/de/</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/" />
+  </url>
+  <url>
+    <loc>https://store-n-go.com/fr/</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/" />
+  </url>
+  <url>
+    <loc>https://store-n-go.com/it/</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/" />
+  </url>
+  <url>
+    <loc>https://store-n-go.com/es/</loc>
+    <lastmod>2025-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/" />
+  </url>
+
+  <!-- Luggage Storage Interlaken pages (5 languages) -->
+  <url>
+    <loc>https://store-n-go.com/luggage-storage-interlaken</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/luggage-storage-interlaken" />
   </url>
   <url>
-    <loc>https://storengo.ch/#location</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/de/luggage-storage-interlaken</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/luggage-storage-interlaken" />
   </url>
   <url>
-    <loc>https://storengo.ch/#pricing</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/fr/luggage-storage-interlaken</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/luggage-storage-interlaken" />
   </url>
   <url>
-    <loc>https://storengo.ch/#how</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/it/luggage-storage-interlaken</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/luggage-storage-interlaken" />
   </url>
   <url>
-    <loc>https://storengo.ch/#faq</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/es/luggage-storage-interlaken</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://store-n-go.com/de/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://store-n-go.com/fr/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://store-n-go.com/it/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://store-n-go.com/es/luggage-storage-interlaken" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://store-n-go.com/luggage-storage-interlaken" />
   </url>
+
   <!-- Legal Pages -->
   <url>
-    <loc>https://storengo.ch/privacy-policy.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/privacy-policy</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://storengo.ch/cookie-policy.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/cookie-policy</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://storengo.ch/impressum.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://store-n-go.com/impressum</loc>
+    <lastmod>2025-06-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
 </urlset>

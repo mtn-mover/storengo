@@ -1,7 +1,7 @@
 {
-  "name": "StoreNGo - Luggage Storage Interlaken",
-  "short_name": "StoreNGo",
-  "description": "Safe luggage storage just 2 minutes from Interlaken Ost station. CHF 10 per bag. Open 11am-6pm daily.",
+  "name": "Store N' Go - Luggage Storage Interlaken",
+  "short_name": "Store N' Go",
+  "description": "Safe luggage storage just 2 minutes from Interlaken Ost station. CHF 10 per bag. Open 11am-7pm daily.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

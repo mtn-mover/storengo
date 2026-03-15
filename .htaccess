@@ -1,42 +1,54 @@
 # Rewrite Engine nur einmal aktivieren
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    
+
     # HTTPS Redirect zuerst
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-    
-    # SEO Domain-Weiterleitungen zu storengo.ch (301 Permanent Redirects)
-    # luggage-storage.ch -> storengo.ch
+
+    # SEO Domain-Weiterleitungen zu store-n-go.com (301 Permanent Redirects)
+    # storengo.ch -> store-n-go.com
+    RewriteCond %{HTTP_HOST} ^(www\.)?storengo\.ch$ [NC]
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
+    # store-n-go.ch -> store-n-go.com
+    RewriteCond %{HTTP_HOST} ^(www\.)?store-n-go\.ch$ [NC]
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
+    # interlaken-storage.ch -> store-n-go.com
+    RewriteCond %{HTTP_HOST} ^(www\.)?interlaken-storage\.ch$ [NC]
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
+    # luggage-storage.ch -> store-n-go.com
     RewriteCond %{HTTP_HOST} ^(www\.)?luggage-storage\.ch$ [NC]
-    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
-    
-    # interlaken-luggage.ch -> storengo.ch
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
+    # interlaken-luggage.ch -> store-n-go.com
     RewriteCond %{HTTP_HOST} ^(www\.)?interlaken-luggage\.ch$ [NC]
-    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
-    
-    # luggage-storage-interlaken.ch -> storengo.ch
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
+    # luggage-storage-interlaken.ch -> store-n-go.com
     RewriteCond %{HTTP_HOST} ^(www\.)?luggage-storage-interlaken\.ch$ [NC]
-    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
-    
-    # Spezifische www zu non-www Weiterleitung für storengo.ch
-    RewriteCond %{HTTP_HOST} ^www\.storengo\.ch$ [NC]
-    RewriteRule ^(.*)$ https://storengo.ch/$1 [R=301,L]
-    
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
+    # Spezifische www zu non-www Weiterleitung für store-n-go.com
+    RewriteCond %{HTTP_HOST} ^www\.store-n-go\.com$ [NC]
+    RewriteRule ^(.*)$ https://store-n-go.com/$1 [R=301,L]
+
     # Clean URLs - Remove .html extension
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^luggage-storage-interlaken$ luggage-storage-interlaken.html [L]
-    
+
     # Redirect .html to clean URL
     RewriteCond %{THE_REQUEST} /luggage-storage-interlaken\.html [NC]
     RewriteRule ^luggage-storage-interlaken\.html$ /luggage-storage-interlaken [R=301,L]
-    
+
     # Optional: Trailing Slash Handling (SEO best practice)
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_URI} !(.*)/$
-    RewriteRule ^(.*)$ https://storengo.ch/$1/ [R=301,L]
+    RewriteRule ^(.*)$ https://store-n-go.com/$1/ [R=301,L]
 </IfModule>
 
 # Enable GZIP compression
@@ -79,12 +91,12 @@
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
-    
+
     # Cache-Control für bessere SEO
     <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp|woff|woff2)$">
         Header set Cache-Control "public, max-age=31536000"
     </FilesMatch>
-    
+
     <FilesMatch "\.(html|htm)$">
         Header set Cache-Control "public, max-age=3600"
     </FilesMatch>
@@ -101,7 +113,7 @@
 <IfModule mod_rewrite.c>
     # Robots.txt handling
     RewriteRule ^robots\.txt$ robots.txt [L]
-    
+
     # Sitemap handling
     RewriteRule ^sitemap\.xml$ sitemap.xml [L]
 </IfModule>

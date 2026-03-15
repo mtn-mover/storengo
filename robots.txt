@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://storengo.ch/sitemap.xml
+Sitemap: https://store-n-go.com/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

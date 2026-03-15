@@ -5,7 +5,7 @@
   <!-- Home pages (5 languages) -->
   <url>
     <loc>https://store-n-go.com/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
@@ -17,7 +17,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/de/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
@@ -29,7 +29,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/fr/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/it/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
@@ -53,7 +53,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/es/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/" />
@@ -67,7 +67,7 @@
   <!-- Luggage Storage Interlaken pages (5 languages) -->
   <url>
     <loc>https://store-n-go.com/luggage-storage-interlaken</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
@@ -79,7 +79,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/de/luggage-storage-interlaken</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
@@ -91,7 +91,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/fr/luggage-storage-interlaken</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
@@ -103,7 +103,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/it/luggage-storage-interlaken</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
@@ -115,7 +115,7 @@
   </url>
   <url>
     <loc>https://store-n-go.com/es/luggage-storage-interlaken</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://store-n-go.com/luggage-storage-interlaken" />
@@ -129,19 +129,19 @@
   <!-- Legal Pages -->
   <url>
     <loc>https://store-n-go.com/privacy-policy</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://store-n-go.com/cookie-policy</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://store-n-go.com/impressum</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -1,0 +1,17 @@
+# Office documents (project planning, status reports)
+*.docx
+*.xlsx
+*.pptx
+
+# OS-specific
+.DS_Store
+Thumbs.db
+nul
+
+# Editor
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+*.bak

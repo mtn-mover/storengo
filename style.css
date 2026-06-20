@@ -257,28 +257,9 @@ nav {
     font-weight: 500;
 }
 
-/* Season Info Banner */
-.season-banner {
-    position: fixed;
-    top: 65px;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background: var(--dark);
-    color: white;
-    text-align: center;
-    padding: 0.6rem 1rem;
-    font-size: 0.95rem;
-}
-
-.season-banner-content {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
 /* Hero Section */
 .hero {
-    margin-top: 115px;
+    margin-top: 65px;
     padding: 6rem 2rem;
     text-align: center;
     background: linear-gradient(to bottom, var(--white) 0%, var(--gray-light) 100%);
@@ -1319,14 +1300,8 @@ footer {
         display: block;
     }
 
-    .season-banner {
-        top: 56px;
-        font-size: 0.85rem;
-        padding: 0.5rem 0.75rem;
-    }
-
     .hero {
-        margin-top: 105px;
+        margin-top: 56px;
         padding: 3rem 1rem;
     }
 

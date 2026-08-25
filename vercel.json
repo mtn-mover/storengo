@@ -5,11 +5,50 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/de/:pfad*",
+      "destination": "https://store-n-go.com/de",
+      "permanent": true
+    },
+    {
+      "source": "/fr/:pfad*",
+      "destination": "https://store-n-go.com/fr",
+      "permanent": true
+    },
+    {
+      "source": "/es/:pfad*",
+      "destination": "https://store-n-go.com/es",
+      "permanent": true
+    },
+    {
+      "source": "/impressum:rest*",
+      "destination": "https://store-n-go.com/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/:pfad*",
+      "destination": "https://store-n-go.com/",
+      "permanent": true
     }
   ]
 }

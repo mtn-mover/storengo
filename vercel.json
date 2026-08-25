@@ -26,6 +26,11 @@
   ],
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://store-n-go.com/",
+      "permanent": true
+    },
+    {
       "source": "/de/:pfad*",
       "destination": "https://store-n-go.com/de",
       "permanent": true
